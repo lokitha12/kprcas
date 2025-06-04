@@ -1,0 +1,39 @@
+.header{
+    background-color: black;
+    color:aqua;
+}
+ 
+ .header:hover{
+    background-color: blueviolet ;
+ }   color: rgb(150, 146, 146);
+}
+#one
+{
+      color:yellowgreen
+}
+#two
+{
+     color:bisque
+}
+#three
+{
+    color:aqua
+}
+#four,#five,#six
+{ 
+    color:rgb(160, 95, 117)
+}
+*{
+    color:rgb(148, 22, 165);
+}
+.link{
+    text-decoration: none;
+    color: chocolate;
+    background-color: beige;
+    padding: 10px;
+    border-radius: 10px;
+}
+.link:hover{
+    color:rgb(8, 129, 177);
+    background-color: brown;
+}

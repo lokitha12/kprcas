@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flex</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-self: start;
+        }
+        .item{
+            background-color:   black;
+            padding: 12px 70px;
+        }
+        .item-1{
+            background-color: orange;
+        }
+        .item-2{
+            background-color: white;
+            
+            display: flex;
+            justify-content: center;
+            
+            }
+        .item-3{
+            background-color: green;
+        }
+        img{
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1"></div>
+        <div class="item item-2">
+            <img src="./flag.png" alt="flag">
+        </div>
+        <div class="item item-3"></div>
+    </div>
+</body>
+</html>

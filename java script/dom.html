@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dom</title>
+</head>
+<body>
+    <h1 id="message">welcome to html</h1>
+    <button onclick="changetext()">click me</button>
+    <input type="text" id="name" placeholder="Enter the name" >
+    <button onclick="addName()">Add</button>
+    <ol id="display">
+        <li>loki</li>
+    </ol>
+    <script>
+        function addName(){
+            const name=document.getElementById('name').value;
+            const li =document.createElement('li')
+            li.textContent=name
+            document.getElementById('display').append(li)
+        }
+        function changetext(){
+            const elem = document.getElementById('message');
+            elem.innerText="welcome to java script"
+            elem.style.color="orange"
+            elem.style.fontsize="24px"
+        }
+    </script>
+</body>
+</html>

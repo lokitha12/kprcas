@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    
+    <title>MY INTRO</title>
     <style>
-        h2{
-            color:bisque;
-            font-size :70px;
-        }
+      body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    input {
+      margin-bottom: 10px;
+      display: block;
+    }
+    #output {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid brown;
+      background-color: aqua;
+    }
     </style>
-    
-    <title>full stack</title>
-    <link rel="stylesheet" href="./kpr/CSS/style.css">
 </head>
-
 <body>
-<h1 style="color:red; font-size: 70px;"> welcome</h1>
-<h2>lokitha</h2>
-<h3 style="color:violet; font-size: 70px;"> dhanvi</h3>
-<h4 style="color:rgb(0, 183, 255); font-size: 70px;">dhanushiya</h4>
-<h5 style="color: orange; font-size: 70px;">harini</h5>
-<h6 style="color:darkorchid; font-size: 70px;">dhanya</h6>
-<p class="header">Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Odio consequuntur eligendi magnam quaerat <q></q>aias! Sed labore rem repellat sapiente consectetur. Hic ipsa saepe perferendis! Eum aliquam quidem commodi temporibus non?50
-Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Odio consequuntur eligendi magnam quaerat <q></q>aias! Sed labore rem repellat sapiente consectetur. Hic ipsa saepe perferendis! Eum aliquam quidem commodi temporibus non?50
-</p>
+    <h1>MY INTRO</h1>
+    <form>
+        <label for="NAME">name:</label>
+        <INPUT type="text" id="name" placeholder="enter your name" ><br>
+            
+        <label for="ROLLNO">rollno:</label>
+        <INPUT type="number" id="rollno" placeholder= " enter your rollno" ><br>
+            
+        <label for="email">EMAIL:</label>
+        <INPUT type="text" id="email" placeholder="enter your email" ><br>
 
-<ol>
-    <li id="one">dhanya</li>
-    <li id="two">harini</li>
-    <li id="three">dhanushiya</li>
-    <li >lokitha</li>
-    
+        <label for="DEPARTMENT">department:</label>
+        <INPUT type="text" id="department" placeholder="enter your department"><br>
+         <button onclick="displayDetails()">Submit</button>
 
+  <div id="output"></div>
     
-</ol>
-<ul>
-    <li id="one">it</li>
-    <li id="two">ct</li>
-    <li id="three">bca</li>
-</ul>
-   <u>lokitha</u>
-   <br> 
-   <b>dhanvi</b>
-   <br>
-   <i>shaanvi</i>
-   <br>
-   <a class="link" href="https://www.whatsapp.com">WHATSAPP</a>
-   <br>
-   <a class="link" href="home.html">home</a>
+     <script>
+    function displayDetails() {
+      const name = document.getElementById('name').value;
+      const rollno = document.getElementById('rollno').value;
+      const email = document.getElementById('email').value;
+      const department = document.getElementById('department').value;
+
+      const outputDiv = document.getElementById('output');
+      outputDiv.innerHTML = `
+        <h3>Entered Details:</h3>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Name:</strong> ${rollno}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Age:</strong> ${department}</p>
+      `;
+    }
+  </script>
+</form>
+</body>
 </html>
